@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper{
+    width: 1024px;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+}
+/*
+*menu
+*/
+nav {
+    background-color:#1F316F;
+    color:#ffffff;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav >.wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem
+}
+
+.Menu{
+    width: 40%;
+}
+
+.Menu >ul{
+  display: flex;
+  list-style-type: none;
+  margin:13px;
+  padding:0px;
+  justify-content: space-between;
+}
+
+.Menu>ul>li>a{
+    text-decoration: none;
+    color:#ffffff;
+    margin: auto;
+}
+
+.logo {
+ display: flex;
+ align-items: center;
+}
+.logo{
+    height: 100%;
+}
+/*
+*Hero / jumbotron
+*/
+
+header {
+    background: url("../IMG_0403.JPG") ;
+    height: 140vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    letter-spacing: 5px;
+    text-shadow:  0 0  10px #000;
+}
+
+.header-opacity {
+    background-color:rgba(35, 83, 134, 0.308);
+    width: 100%;
+    height: 100%;
+    opacity :0,9;
+    position:absolute;
+    top: 0;
+    left:0;
+}
+
+.header-jumbotron {
+     position: absolute;
+     top:0;
+     left:0;
+     display: flex;
+     width: 100%;
+     height:100%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+}
+
+.header-jumbotron > h4{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+
+}
+.header-jumbotron> h5{
+    color:#fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform:uppercase;
+}
+.header-jumbotron> p{
+    padding: 5px;
+    margin: 0px 5px 15px 5px;
+    color: #fff;
+}
+ a{
+text-decoration: none;
+color:#333;
+text-shadow: none;
+}
+.button{
+    background-color:#2009a1;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    font-family:"moderustic", sans-serif;
+  
+    
+}
+.button-xl {
+    font-size:1.4rem;
+    padding:15px;
+    color:#c5c5c5;
+}
+
+/*
+*statistic
+*/
+#statistic{
+    background-color:#55679C;
+    color:#fff;
+}
+#statistic > .wrapper{
+padding: 0px;
+width: 90%;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+#statistic >.wrapper>div{
+    border: 1px solid;
+}
+ 
+
+ #statistic >.wrapper > div > p >{
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+ }
+ #statistic>.wrapper>div>p>i{
+   margin-right: 10px;
+   font-size: 3.5rem;
+ }
+ #statistic >.wrapper > div > small{
+   
+    font-size: 3.5rem;
+ }
+
+ /*
+ *
+ */
+ #premium-course{
+    background-color:#1E2A5E;
+ }
+ #premium-course >.wrapper >h4{
+    text-align: center;
+    font-size:2.8rem;
+    margin:0px;
+    padding: 0px;
+    font-family:"Nerko One", cursive;
+    color:#000101;
+ }
+ #premium-course >.wrapper >h4 >span{
+    color:#fff;
+ }
+ 
+ #premium-course >.wrapper > p {
+    text-align: center;
+    color:#fff;
+    margin:0px;
+    padding: 5px;
+
+
+ }
+ .grid{
+    display:grid;
+    grid-template-columns:30% 30% 30%;
+    grid-gap: 50px;
+ }
+ .grid>.item{
+    border:1px solid #000000;
+background-color:rgb(34, 28, 28);
+position:relative;
+border-radius: 8px;
+box-shadow: 6px 2px 5px -2px rgba(0,0,0,0.75);
+
+ }
+ .grid>.item>img{
+    width: 50vh;
+    height:40vh;
+    position: relative;
+    box-shadow: 6px 2px 5px -2px rgba(0,0,0,0.75);
+
+    background-repeat: no-repeat;
+    position:relative;
+    align-content: center;
+    top:2px;
+    left:5px;
+    border-radius: 8px;
+    border-color:#fff 1px solid;
+ }
+
+ #Tentang-mbake >{
+    background-color:#080b13;
+    color:#fff;
+ }
+
+ #Tentang-mbake >.wrapper{
+    padding: 50px 0px 0px 0px;
+ }
+
+ #Tentang-mbake >.wrapper>h4{
+    text-align: center;
+    font-size:2.8rem;
+    margin:0px;
+    padding:0px;
+    font-family:"Martian Mono", monospace;
+    
+
+ }
+ #Tentang-mbake >.wrapper>p>img{
+    border-color:#000 1px solid;
+ }
+ #Tentang-mbake>.wrapper>img{
+    width: 40vh;
+    height:47vh;
+    position: absolute;
+    box-shadow: 6px 2px 5px -2px rgba(0,0,0,0.75);
+    padding: 0px;
+    position:-webkit-sticky;
+    align-content: center;
+    top:1500px;
+    left:750px;
+    border-radius: 8px;
+    border-color:#fff 1px solid;
+ }
+ #Tentang-mbake>.wrapper > p {
+    text-align: center;
+    color:#ffffff;
+    margin:0px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    position:relative;
+    align-content: center;
+    top:10px;
+    left:0px;
+    border-radius: 8px;
+    width: 85vh;
+    height:40vh;
+    position: relative;
+    box-shadow: 6px 2px 9px -1px rgba(24, 20, 20, 0.75);
+    background-color:#162447;
+
+ }
+ #Tentang-mbake>.wrapper>div>.desc>.social>a{
+    color:#fff;
+ }
+ #free-course >.wrapper >h4{
+    text-align: center;
+    font-size:1.8rem;
+    margin:0px;
+    padding: 0px;
+    font-family:"Martian Mono", monospace;
+    color:#cfd2da;
+ }
+ #free-course{
+    background-color:rgb(255, 255, 255);
+    padding:20px;
+    margin:0px;
+ }
+ #free-course >.wrapper>h4>span{
+   color: #FFDB00;
+ }
+ footer {
+   background-color:#293462;
+   color: #fff;
+   text-align: center;
+ }
+
+ footer>.wrapper{
+   padding: 30px 0px 30px 0px;
+ }
+
+ @media only screen and(max-width:1024px){
+   .wrapper{
+      width: 90%;
+   }
+ }
+ @media only screen and(max-width: 900px){
+   #statistic >.wrapper> div>p{
+      font-size: 2.5rem;
+      margin: 0px;
+      padding:0px;
+   }
+   #statistic >.wrapper > div > p >{
+      font-size: 2.5rem;
+   }
+ }
+ .grid{
+   grid-template-columns:29% 29% 29%;
+ }
+ .item > img{
+   width:8%;
+ }
+
+@media only screen and(max-width: 768px){
+   .menu{
+      width:60%;
+   }
+   .header-jumbotron> h4{
+      font-size: 1.5rem;
+   }
+   .hader-jumbotron>h5{
+      font-size: 2rem;
+      line-height: 2.2rem;
+   }
+   .header-jumbotron>p{
+      font-size:0.8rem;
+   }
+   .button{
+      padding: 5px;
+   }
+   .button-x1{
+      font-size: 1.2rem;
+      padding:10px;
+   }
+   #statistic >.wrapper> div>p{
+      font-size: 1.5rem;
+      margin: 0px;
+   }
+   #statistic>.wrapper>div>p>i{
+      font-size: 1.5rem;
+   }
+
+}
+@media only screen and(max-width:600px){
+   .grid{
+ grid-template-columns: 100%;
+   }
+   #statistic >.wrapper{
+      padding:10px;
+      flex-direction: column;
+   }
+   #statistic >.wrapper >div{
+      display: flex;
+   }
+   #statistic >.wrapper >div >small{
+      font-size: 1.5rem;
+      padding-left: 10px;
+   }
+
+}
